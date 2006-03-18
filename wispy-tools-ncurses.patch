@@ -1,0 +1,24 @@
+diff -urN wispy-tools-2006-01-R1.orig/configure.in wispy-tools-2006-01-R1/configure.in
+--- wispy-tools-2006-01-R1.orig/configure.in	2006-01-19 22:39:56.000000000 +0100
++++ wispy-tools-2006-01-R1/configure.in	2006-03-18 13:12:03.000000000 +0100
+@@ -134,7 +134,7 @@
+ fi
+ 
+ if test "$termcontrol" = "ncurses"; then
+-	AC_CHECK_HEADER([ncurses.h], [foundhcurses=yes])
++	AC_CHECK_HEADER([ncurses/ncurses.h], [foundhcurses=yes])
+ elif test "$termcontrol" = "curses"; then
+ 	AC_CHECK_HEADER([curses.h], [foundhcurses=yes])
+ fi
+diff -urN wispy-tools-2006-01-R1.orig/wispy_curses.c wispy-tools-2006-01-R1/wispy_curses.c
+--- wispy-tools-2006-01-R1.orig/wispy_curses.c	2006-01-19 22:39:56.000000000 +0100
++++ wispy-tools-2006-01-R1/wispy_curses.c	2006-03-18 13:12:31.000000000 +0100
+@@ -21,7 +21,7 @@
+ 
+ #include <stdio.h>
+ #include <usb.h>
+-#include <curses.h>
++#include <ncurses/curses.h>
+ 
+ #include "config.h"
+ 
