@@ -19,8 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 WiSPY-Tools are a set of open-source tools for accessing the WiSPY USB
 2.4GHz spectrum analyzer by Metageek LLC (http://www.metageek.net).
 
-This package contain:
-
+This package contains:
 - WiSPY Curses, a simple Curses-based grapher for data from the WiSPY
   device. Data is fetched purely in userspace via libusb.
 
@@ -36,8 +35,7 @@ Group:		Networking/Utilities
 WiSPY-Tools are a set of open-source tools for accessing the WiSPY USB
 2.4GHz spectrum analyzer by Metageek LLC (http://www.metageek.net).
 
-This package contain:
-
+This package contains:
 - WiSPY GTK, a GTK grapher for data from the WiSPY device. Data is
   fetched purely in userspace via libusb. The WiSPY GTK interface is
   modeled off the Metageek windows application interface, although there
