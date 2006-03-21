@@ -1,6 +1,6 @@
 %define		_ver 2006-01-R1
-Summary:	Wi-SPY is a USB 2.4GHz spectrum analyzer
-Summary(pl):	Wi-SPY jest analizatorem widma(spektrum) dla USB 2.4GHz
+Summary:	Wi-SPY - a USB 2.4GHz spectrum analyzer
+Summary(pl):	Wi-SPY - analizator widma dla USB 2.4GHz
 Name:		wispy-tools
 Version:	2006_01_R1
 Release:	0.1
@@ -17,33 +17,47 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 WiSPY-Tools are a set of open-source tools for accessing the WiSPY USB
-2.4GHz spectrum analyzer by Metageek LLC (http://www.metageek.net).
+2.4GHz spectrum analyzer by Metageek LLC (http://www.metageek.net/).
 
 This package contains:
 - WiSPY Curses, a simple Curses-based grapher for data from the WiSPY
   device. Data is fetched purely in userspace via libusb.
 
 %description -l pl
-WiSPY-Tools s± narzêdziami open-source do wspierania urz±dzenia.
+WiSPY-Tools to zbiór narzêdzi o otwartych ¼ród³ach pozwalaj±cych na
+dostêp do analizatora widma 2.4GHz WiSPY USB produkcji Metageek LLC
+(http://www.metageek.net/).
+
+Ten pakiet zawiera:
+- WiSPY Curses - proste narzêdzie oparte na Curses do rysowania
+  wykresów danych z urz±dzenia WiSPY. DAne s± pobierane w przestrzeni
+  u¿ytkownika poprzez libusb.
 
 %package gtk
-Summary:	Wi-SPY is a USB 2.4GHz spectrum analyzer
-Summary(pl):	Wi-SPY jest analizatorem spektrum dla USB 2.4GHz
+Summary:	Wi-SPY - a USB 2.4GHz spectrum analyzer
+Summary(pl):	Wi-SPY - analizator widma dla USB 2.4GHz
 Group:		Networking/Utilities
 
 %description gtk
 WiSPY-Tools are a set of open-source tools for accessing the WiSPY USB
-2.4GHz spectrum analyzer by Metageek LLC (http://www.metageek.net).
+2.4GHz spectrum analyzer by Metageek LLC (http://www.metageek.net/).
 
 This package contains:
-- WiSPY GTK, a GTK grapher for data from the WiSPY device. Data is
+- WiSPY GTK, a GTK+ grapher for data from the WiSPY device. Data is
   fetched purely in userspace via libusb. The WiSPY GTK interface is
-  modeled off the Metageek windows application interface, although there
+  modeled off the Metageek Windows application interface, although there
   are some differences.
 
-
 %description gtk -l pl
-WiSPY-Tools s± narzêdziami open-source do wspierania urz±dzenia.
+WiSPY-Tools to zbiór narzêdzi o otwartych ¼ród³ach pozwalaj±cych na
+dostêp do analizatora widma 2.4GHz WiSPY USB produkcji Metageek LLC
+(http://www.metageek.net/).
+
+Ten pakiet zawiera:
+- WiSPY GTK - narzêdzie oparte na GTK+ do rysowania wykresów danych z
+  urz±dzenia WiSPY. DAne s± pobierane w przestrzeni u¿ytkownika
+  poprzez libusb. Interfejs WiSPY GTK jest zaprojektowany w oparciu o
+  interfejs aplikacji Metageek pod Windows, ale jest trochê ró¿nic.
 
 %prep
 %setup -q -n %{name}-%{_ver}
@@ -56,7 +70,6 @@ WiSPY-Tools s± narzêdziami open-source do wspierania urz±dzenia.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_bindir}
 
 install wispy_raw $RPM_BUILD_ROOT%{_bindir}
