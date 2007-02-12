@@ -1,6 +1,6 @@
 %define		_ver 2006-01-R1
 Summary:	Wi-SPY - a USB 2.4GHz spectrum analyzer
-Summary(pl.UTF-8):   Wi-SPY - analizator widma dla USB 2.4GHz
+Summary(pl.UTF-8):	Wi-SPY - analizator widma dla USB 2.4GHz
 Name:		wispy-tools
 Version:	2006_01_R1
 Release:	0.1
@@ -35,7 +35,7 @@ Ten pakiet zawiera:
 
 %package gtk
 Summary:	Wi-SPY - a USB 2.4GHz spectrum analyzer
-Summary(pl.UTF-8):   Wi-SPY - analizator widma dla USB 2.4GHz
+Summary(pl.UTF-8):	Wi-SPY - analizator widma dla USB 2.4GHz
 Group:		Networking/Utilities
 
 %description gtk
