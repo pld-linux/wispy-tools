@@ -1,6 +1,6 @@
 %define		_ver 2006-01-R1
 Summary:	Wi-SPY - a USB 2.4GHz spectrum analyzer
-Summary(pl):	Wi-SPY - analizator widma dla USB 2.4GHz
+Summary(pl.UTF-8):   Wi-SPY - analizator widma dla USB 2.4GHz
 Name:		wispy-tools
 Version:	2006_01_R1
 Release:	0.1
@@ -23,19 +23,19 @@ This package contains:
 - WiSPY Curses, a simple Curses-based grapher for data from the WiSPY
   device. Data is fetched purely in userspace via libusb.
 
-%description -l pl
-WiSPY-Tools to zbiór narzêdzi o otwartych ¼ród³ach pozwalaj±cych na
-dostêp do analizatora widma 2.4GHz WiSPY USB produkcji Metageek LLC
+%description -l pl.UTF-8
+WiSPY-Tools to zbiÃ³r narzÄ™dzi o otwartych ÅºrÃ³dÅ‚ach pozwalajÄ…cych na
+dostÄ™p do analizatora widma 2.4GHz WiSPY USB produkcji Metageek LLC
 (http://www.metageek.net/).
 
 Ten pakiet zawiera:
-- WiSPY Curses - proste narzêdzie oparte na Curses do rysowania
-  wykresów danych z urz±dzenia WiSPY. DAne s± pobierane w przestrzeni
-  u¿ytkownika poprzez libusb.
+- WiSPY Curses - proste narzÄ™dzie oparte na Curses do rysowania
+  wykresÃ³w danych z urzÄ…dzenia WiSPY. DAne sÄ… pobierane w przestrzeni
+  uÅ¼ytkownika poprzez libusb.
 
 %package gtk
 Summary:	Wi-SPY - a USB 2.4GHz spectrum analyzer
-Summary(pl):	Wi-SPY - analizator widma dla USB 2.4GHz
+Summary(pl.UTF-8):   Wi-SPY - analizator widma dla USB 2.4GHz
 Group:		Networking/Utilities
 
 %description gtk
@@ -48,16 +48,16 @@ This package contains:
   modeled off the Metageek Windows application interface, although there
   are some differences.
 
-%description gtk -l pl
-WiSPY-Tools to zbiór narzêdzi o otwartych ¼ród³ach pozwalaj±cych na
-dostêp do analizatora widma 2.4GHz WiSPY USB produkcji Metageek LLC
+%description gtk -l pl.UTF-8
+WiSPY-Tools to zbiÃ³r narzÄ™dzi o otwartych ÅºrÃ³dÅ‚ach pozwalajÄ…cych na
+dostÄ™p do analizatora widma 2.4GHz WiSPY USB produkcji Metageek LLC
 (http://www.metageek.net/).
 
 Ten pakiet zawiera:
-- WiSPY GTK - narzêdzie oparte na GTK+ do rysowania wykresów danych z
-  urz±dzenia WiSPY. DAne s± pobierane w przestrzeni u¿ytkownika
+- WiSPY GTK - narzÄ™dzie oparte na GTK+ do rysowania wykresÃ³w danych z
+  urzÄ…dzenia WiSPY. DAne sÄ… pobierane w przestrzeni uÅ¼ytkownika
   poprzez libusb. Interfejs WiSPY GTK jest zaprojektowany w oparciu o
-  interfejs aplikacji Metageek pod Windows, ale jest trochê ró¿nic.
+  interfejs aplikacji Metageek pod Windows, ale jest trochÄ™ rÃ³Å¼nic.
 
 %prep
 %setup -q -n %{name}-%{_ver}
