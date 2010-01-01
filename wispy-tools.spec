@@ -12,7 +12,7 @@ Patch0:		%{name}-ncurses.patch
 URL:		http://www.kismetwireless.net/wispy.shtml
 BuildRequires:	autoconf
 BuildRequires:	libusb-devel
-Buildrequires:	ncurses-devel
+BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
